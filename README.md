@@ -43,7 +43,7 @@ ano_cerimonia: 2020
 
 * 5- A partir de que ano que a categoria "Actress" deixa de existir?
  
-R: No ano de 1979
+R: No ano de 1976
 
 ano_cerimonia: 1976
 
