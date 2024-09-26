@@ -1,4 +1,4 @@
-# Oscar
+
 # Analise de dados do Oscar
 
  Atividade referente ao Banco do Oscar
@@ -39,7 +39,8 @@ ano_cerimonia: 2020
  db["Registros"].find({nome_do_filme:/Toy Story/,vencedor:'1'},{ano_cerimonia:1,_id:0})
  ```
 
-* 5- A partir de que ano que a categoria "Actress" deixa de existir? 
+* 5- A partir de que ano que a categoria "Actress" deixa de existir?
+* 
 R: 1979
 
 ```js
