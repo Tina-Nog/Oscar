@@ -43,7 +43,9 @@ ano_cerimonia: 2020
 
 * 5- A partir de que ano que a categoria "Actress" deixa de existir?
  
-R: 1979
+R: No ano de 1979
+
+ano_cerimonia: 1976
 
 ```js
  db["Registros"].find({categoria:"ACTRESS",vencedor:'1'},{ano_cerimonia:1,_id:0}).sort({ano_cerimonia:-1}).limit(1)
@@ -53,7 +55,8 @@ R: 1979
 
 R: A primeira da categoria foi Janet Gaynor, no ano de 1928.
 
-  ano_cerimonia: 1928,
+  ano_cerimonia: 1928
+  
   nome_do_indicado: 'Janet Gaynor'
 
 ```js
@@ -76,6 +79,7 @@ ano_cerimonia: 2006
 
 ```js
 db["Registros"].find({nome_do_filme:/Crash/},{ano_cerimonia:1,_id:0}).sort({ano_cerimonia:-1}).limit(1)
+```
 
 9- Bom... dê um Oscar para um filme que merece muito, mas não ganhou.
 
