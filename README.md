@@ -32,7 +32,9 @@ R: Não
 R: O filme Toy Story ganhou três vezes, sendo duas vezes em 2011 e uma em 2020.
 
 ano_cerimonia: 2011
+
 ano_cerimonia: 2011
+
 ano_cerimonia: 2020
 
 ```js
@@ -40,7 +42,7 @@ ano_cerimonia: 2020
  ```
 
 * 5- A partir de que ano que a categoria "Actress" deixa de existir?
-* 
+ 
 R: 1979
 
 ```js
