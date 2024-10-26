@@ -94,6 +94,7 @@ db["Registros"].find({nome_do_filme:/Crash/},{ano_cerimonia:1,_id:0}).sort({ano_
   db["Registros"].find({nome_do_filme:"Central Station"},{ano_cerimonia:1,_id:0}).sort({ano_cerimonia:-1}).pretty()
 ```
 * 11- Inclua no banco 3 filmes que nunca foram nem nomeados ao Oscar, mas que merecem ser.
+
   R: Os filmes "Divergente","Jonh Wick","Crepúsculo".
 ```js
 db["Registros"].insertMany([
@@ -101,6 +102,7 @@ db["Registros"].insertMany([
 {nome_do_filme:"Divergente",ano_filmagem:2014,vancedor:"1"},
 {nome_do_filme:"Crepúsculo",ano_filmagem:2008,vancedor:"1"}
 ]) ```
+
 * 12 - Pensando no ano em que você nasceu: Qual foi o Oscar de melhor filme, Melhor Atriz e Melhor Diretor?
  R: No ano de 2005 o melhor filme foi "
 ```js
