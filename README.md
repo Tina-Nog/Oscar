@@ -80,17 +80,32 @@ db["Registros"].updateMany({vencedor:'false'},{$set:{vencedor:'0'}})
 ```js
 db["Registros"].find({nome_do_filme:/Crash/},{ano_cerimonia:1,_id:0}).sort({ano_cerimonia:-1}).limit(1)
 ```
+ 9- Bom... dê um Oscar para um filme que merece muito, mas não ganhou.
 
-* 9- Bom... dê um Oscar para um filme que merece muito, mas não ganhou.
-
+  R: O filme "Emma".
+  ```js
+  db["Registro"].updateOne({nome_do_filme:"Emma"},{$set:{vencedo:"1"}});
+  ```
 
 * 10- O filme Central do Brasil aparece no Oscar?
 
+  R: Sim, o filme "Central Station" concorreu duas vezes em 1999, mas nunca ganhou.
+  ```js
+  db["Registros"].find({nome_do_filme:"Central Station"},{ano_cerimonia:1,_id:0}).sort({ano_cerimonia:-1}).pretty()
+```
 * 11- Inclua no banco 3 filmes que nunca foram nem nomeados ao Oscar, mas que merecem ser.
+  R: Os filmes "Divergente","Jonh Wick","Crepúsculo".
 ```js
 db["Registros"].insertMany([
-{nome}
+{nome_do_filme:"Jonh Wick", ano_filmagem:2014,vencedor:"1"},
+{nome_do_filme:"Divergente",ano_filmagem:2014,vancedor:"1"},
+{nome_do_filme:"Crepúsculo",ano_filmagem:2008,vancedor:"1"}
 ]) 
+```
+* 12 - Pensando no ano em que você nasceu: Qual foi o Oscar de melhor filme, Melhor Atriz e Melhor Diretor?
+ R: No ano de 2005 o melhor filme foi "
+```js
+db["Registos"].find({nome_do_filme:"1",ano_cerimonia:2005,nome_do_indicado:"1",categoria:"1",_id:0})
 
-* 14 - Pensando no ano em que você nasceu: Qual foi o Oscar de melhor filme, Melhor Atriz e Melhor Diretor?
+
 
