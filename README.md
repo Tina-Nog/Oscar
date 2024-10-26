@@ -100,8 +100,7 @@ db["Registros"].insertMany([
 {nome_do_filme:"Jonh Wick", ano_filmagem:2014,vencedor:"1"},
 {nome_do_filme:"Divergente",ano_filmagem:2014,vancedor:"1"},
 {nome_do_filme:"Crepúsculo",ano_filmagem:2008,vancedor:"1"}
-]) 
-```
+]) ```
 * 12 - Pensando no ano em que você nasceu: Qual foi o Oscar de melhor filme, Melhor Atriz e Melhor Diretor?
  R: No ano de 2005 o melhor filme foi "
 ```js
