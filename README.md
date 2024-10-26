@@ -105,10 +105,15 @@ db["Registros"].find({nome_do_filme:/Crash/},{ano_cerimonia:1,_id:0}).sort({ano_
 ```
 
 * 12 - Pensando no ano em que você nasceu: Qual foi o Oscar de melhor filme, Melhor Atriz e Melhor Diretor?
+* 
  R: No ano de 2005
+
    Melhor Diretor: Clint Eastwood
+  
    Melhor Atriz: Cate Blanchett
+  
    Melhor Filme: The Aviator
+  
 ```js
 db["Registros"].find(
     {ano_cerimonia: 2005,categoria: 'CINEMATOGRAPHY',vencedor:"1" })
