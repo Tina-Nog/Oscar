@@ -3,7 +3,7 @@
 
  Atividade referente ao Banco do Oscar
 
-* 1- Quantas vezes Natalie Portman foi indicada ao Oscar?
+*# 1- Quantas vezes Natalie Portman foi indicada ao Oscar?
 
    R: 3
 
