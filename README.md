@@ -95,18 +95,25 @@ db["Registros"].find({nome_do_filme:/Crash/},{ano_cerimonia:1,_id:0}).sort({ano_
 ```
 * 11- Inclua no banco 3 filmes que nunca foram nem nomeados ao Oscar, mas que merecem ser.
 
-  R: Os filmes "Divergente","Jonh Wick","Crepúsculo".
-```js
-db["Registros"].insertMany([
-{nome_do_filme:"Jonh Wick", ano_filmagem:2014,vencedor:"1"},
+  R: Os filmes Divergente, Jonh Wick e Crepúsculo.
+   ```js
+ db["Registros"].insertMany([{nome_do_filme:"Jonh Wick", ano_filmagem:2014,vencedor:"1"},
 {nome_do_filme:"Divergente",ano_filmagem:2014,vancedor:"1"},
 {nome_do_filme:"Crepúsculo",ano_filmagem:2008,vancedor:"1"}
-]) ```
+])
+
+```
 
 * 12 - Pensando no ano em que você nasceu: Qual foi o Oscar de melhor filme, Melhor Atriz e Melhor Diretor?
- R: No ano de 2005 o melhor filme foi "
+ R: No ano de 2005
+   Melhor Diretor: Clint Eastwood
+   Melhor Atriz: Cate Blanchett
+   Melhor Filme: The Aviator
 ```js
-db["Registos"].find({nome_do_filme:"1",ano_cerimonia:2005,nome_do_indicado:"1",categoria:"1",_id:0})
+db["Registros"].find(
+    {ano_cerimonia: 2005,categoria: 'CINEMATOGRAPHY',vencedor:"1" })
 
+db["Registros"].find({ ano_cerimonia: 2005, categoria: "ACTRESS IN A SUPPORTING ROLE",vencedor:"1" })
 
-
+db["Registros"].find({ ano_cerimonia: 2005, categoria:  'DIRECTING',vencedor:"1" })
+```
